@@ -67,6 +67,9 @@ void setup() {
 void loop() {
   mpu6050.update();
   oled.clearDisplay();
+  oled.setCursor(0,0);
+  oled.setTextSize(1);
+  oled.setTextColor(WHITE);
   Serial.println("prueba 1 V2");
   Serial.println("");
   resultadoMDP = analogRead(pulgar);
